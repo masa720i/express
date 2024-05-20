@@ -19,7 +19,7 @@ const responseObjectDataAll = {
 
 /**
  * メモを全件取得するAPI
- *  @returns {Ocject[]} data
+ *  @returns {Object[]} data
  *  @returns {number} data.id - ID
  *  @returns {string} data.title - タイトル
  *  @returns {string} data.text - 内容
@@ -29,4 +29,4 @@ router.get('/', function (req, res, next) {
 	res.json(responseObjectDataAll);
 })
 
-module.express = router;
+module.exports = router;
